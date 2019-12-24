@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.Core\bin\Debug\MyShop.Core.dll
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.Core\bin\Debug\MyShop.Core.pdb
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.Core\obj\Debug\MyShop.Core.dll
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.Core\obj\Debug\MyShop.Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.Core\obj\Debug\MyShop.Core.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Core\bin\Debug\MyShop.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Core\bin\Debug\MyShop.Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Core\obj\Debug\MyShop.Core.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Core\obj\Debug\MyShop.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Core\obj\Debug\MyShop.Core.pdb

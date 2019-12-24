@@ -1,0 +1,42 @@
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\MyShop.DataAcess.InSQL.dll
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\MyShop.DataAcess.InSQL.pdb
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.dll
+c:\users\user\documents\visual studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\MyShop.DataAcess.InSQL.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\MyShop.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\MyShop.Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Initial.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.basket.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Initial1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Custom.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Custom1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Custom2.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.orderItem.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-Course-Udemy\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.orderssecond.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\MyShop.DataAcess.InSQL.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\MyShop.DataAcess.InSQL.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\MyShop.DataAcess.InSQL.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\MyShop.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\MyShop.Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Initial.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.basket.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Initial1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Custom.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Custom1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.Custom2.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.orderItem.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.Migrations.orderssecond.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.DataAcess.InSQL\obj\Debug\MyShop.DataAcess.InSQL.pdb

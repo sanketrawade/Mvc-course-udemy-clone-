@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MyShop.Core.Model.ViewModel.ItemListViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Decimal Total = 0;
+}
+
+<h2>MyCart</h2>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.itemName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.itemQuentity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.itemPrice)
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <input type="image" class="img-fluid" style="height:200px;width:100px;" src="~/Content/ProductImage/@item.itemImage" />
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.itemName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.itemQuentity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.itemPrice)
+        </td>
+        <td>
+            <a href="@Url.Action("removeBasketItem", "Basket", new {Itemid=item.ID})" class="btn btn-outline-danger">Remove</a>
+        </td>
+    </tr>
+       
+            Total = Total + (item.itemPrice * item.itemQuentity);
+       
+       
+}
+</table>
+
+<div class="row">
+<div class="col-md-6">
+
+</div>
+
+<div class="col-md-6">
+    <strong>Total :-</strong> @Total Rs
+    @Html.ActionLink("Continue Shoping", "Index", "Home",null,new { @class="btn btn-outline-primary" })
+    @Html.ActionLink("CheackOut", "checkout", "Basket", new { @class = "btn btn-outline-success" })
+</div>
+</div>

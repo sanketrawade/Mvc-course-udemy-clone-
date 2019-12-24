@@ -1,0 +1,30 @@
+﻿@model MyShop.Core.Model.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+<h4>Product</h4>
+<hr />
+<div class="card" style="width:500px;">
+    <img src="~/Content/ProductImage/@Model.Image" style="width: 18rem;" class="img-responsive" />
+    <div class="card-header">
+        @Html.DisplayFor(model => model.Name)<br />
+    </div>
+    <div class="card-body">
+        @Html.DisplayNameFor(model => model.Description):
+        @Html.DisplayFor(model => model.Description)<br />
+        @Html.DisplayNameFor(model => model.price):
+        @Html.DisplayFor(model => model.price)<br />
+        @Html.DisplayNameFor(model => model.cateogory):
+        @Html.DisplayFor(model => model.cateogory)<br />
+    </div>
+    @Html.ActionLink("Add to Cart","addtoBasket", "Basket", new { id=Model.ID }, new { @class = "btn btn-primary" })
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
