@@ -42,5 +42,17 @@ namespace MyShop.Test
             orderContext.Insert(order);
             orderContext.Commit();
         }
+
+        public Order FindOrder(string id)
+        {
+            Order order = orderContext.Find(id);
+            return order;
+        }
+
+        public void UpdateOrder(Order order,string id)
+        {
+            orderContext.Update(order, id);
+            orderContext.Commit();
+        }
     }
 }

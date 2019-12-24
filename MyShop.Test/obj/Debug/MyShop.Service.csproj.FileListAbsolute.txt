@@ -20,3 +20,14 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Test\bin\D
 C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Test\obj\Debug\MyShop.Service.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Test\obj\Debug\MyShop.Test.dll
 C:\Users\User\Documents\Visual Studio 2015\Projects\New folder\MyShop.Test\obj\Debug\MyShop.Test.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\MyShop.Test.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\MyShop.Test.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\MyShop.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\MyShop.DataAcess.InSQL.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\MyShop.Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\MyShop.DataAcess.InSQL.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\obj\Debug\MyShop.Service.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\obj\Debug\MyShop.Test.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Mvc-course-udemy(clone)\MyShop.Test\obj\Debug\MyShop.Test.pdb
