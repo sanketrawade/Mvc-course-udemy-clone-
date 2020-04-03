@@ -26,6 +26,12 @@ namespace MyShop.Test
             this.orderContext = orderContext;
         }
 
+        //public Order showOrder()
+        //{
+        //    Order order = orderContext.DisplayAll().Where(p => p.Email == User.Identity.Name).FirstOrDefault();
+        //    return order;
+        //}
+
         public void generateOrder(Order order,List<ItemListViewModel> basketItems)
         {
             foreach(var item in basketItems)
@@ -38,7 +44,6 @@ namespace MyShop.Test
                     itemQuentity = item.itemQuentity
                 });
             }
-            order.status = "Confirm";
             orderContext.Insert(order);
             orderContext.Commit();
         }

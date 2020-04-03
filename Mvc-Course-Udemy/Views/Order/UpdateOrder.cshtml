@@ -1,56 +1,138 @@
-﻿@model MyShop.Core.Model.Order
+﻿@model MyShop.Core.Model.ViewModel.AdminOrderViewModel
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Order</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.ID)
+        @Html.HiddenFor(model => model.Order.ID)
 
+
+
+        <div class="row">
+            <div class="col-md-6">
         <div class="form-group">
-            @Html.LabelFor(model => model.firstName, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DisplayFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger" })
-            </div>
+            @Html.LabelFor(model => model.Order.firstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            
+                @Html.EditorFor(model => model.Order.firstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Order.firstName, "", new { @class = "text-danger" })
+            
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.lastName, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DisplayFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
-            </div>
+            @Html.LabelFor(model => model.Order.lastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            
+                @Html.EditorFor(model => model.Order.lastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Order.lastName, "", new { @class = "text-danger" })
+           
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DisplayFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
+            @Html.LabelFor(model => model.Order.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+           
+                @Html.EditorFor(model => model.Order.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Order.Email, "", new { @class = "text-danger" })
+           
         </div>
 
-        
-        <div class="form-group">
-            @Html.LabelFor(model => model.status, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DisplayFor(model => model.status, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
+            @Html.LabelFor(model => model.Order.status, htmlAttributes: new { @class = "control-label col-md-2" })
+            
+              @Html.DropDownListFor(model => model.Order.status, new SelectList(Model.Status, "status", "status"), new { @class = "control-label col-md-2" })
+            
         </div>
+
+       
     </div>
-}
+            <div class="col-md-6">
 
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Order.street, htmlAttributes: new { @class = "control-label col-md-2" })
+                    
+                        @Html.EditorFor(model => model.Order.street, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Order.street, "", new { @class = "text-danger" })
+
+                    
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Order.city, htmlAttributes: new { @class = "control-label col-md-2" })
+                   @Html.EditorFor(model => model.Order.city, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Order.city, "", new { @class = "text-danger" })
+
+                    
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Order.state, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.Order.state, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Order.state, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            </div>
+
+        <div class="row">
+
+            @*@Html.Partial("ListOrderItems", Model.Order.orderItems);*@
+            <div class="col-sm-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Quentity</th>
+                            <th>Item Price</th>
+                            <th>Line Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ 
+                            decimal total = 0;
+                            decimal sum = 0;
+                        }
+                @foreach (var items in Model.Order.orderItems)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(ModelItem => items.itemName)
+                        </td>
+                        <td>
+                           @Html.DisplayFor(ModelItem => items.itemQuentity)
+                        </td>
+                        <td>
+                           @Html.DisplayFor(ModelItem => items.itemPrice)
+                        </td>
+                        <td>
+                            @{ 
+                                total = items.itemPrice * items.itemQuentity;
+                            }
+                            @total
+                        </td>
+                    </tr>
+                                    sum = sum + total;
+                                }
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>@sum</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+        </div>
+                                }
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>

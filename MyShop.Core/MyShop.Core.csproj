@@ -47,8 +47,10 @@
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\OrderItem.cs" />
+    <Compile Include="Model\OrderStatus.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductCategory.cs" />
+    <Compile Include="Model\ViewModel\AdminOrderViewModel.cs" />
     <Compile Include="Model\ViewModel\BasketItemCountViewModel.cs" />
     <Compile Include="Model\ViewModel\ItemListViewModel.cs" />
     <Compile Include="Model\ViewModel\orderListViewModel.cs" />

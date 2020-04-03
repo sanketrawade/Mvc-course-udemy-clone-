@@ -8,26 +8,29 @@
 <div class="row">
 <div class="col-sm-6">
 <div class="card">
-    <div class="col-sm-12">
-        <div class="col-sm-6">
+        <div class="row-cols-sm-3">
             @Html.ActionLink("Product", "Index", "Product", null, new { @class = "nav-item nav-link" })
             
         </div>
 
-
-
-        <div class="col-sm-6">
+        <div class="row-cols-sm-3">
             @Html.ActionLink("Product-Category", "Index", "ProductCategory", null, new { @class = "nav-item nav-link" })
         </div>
-    </div>
+
     </div>
     </div>
 
     <div class="col-sm-6">
         <div class="card">
-            @Html.ActionLink("Order", "Index", "Order", null, new { @class = "nav-item nav-link" })
+            <div class="row-cols-sm-3">
+                @Html.ActionLink("Order", "Index", "Order", null, new { @class = "nav-item nav-link" })
+            </div>
+
+            <div class="row-cols-sm-3">
+                @Html.ActionLink("OrderStatus", "Index", "OrderStatus", null, new { @class = "nav-item nav-link" })
+            </div>
         </div>
-           </div>
+    </div>
     </div>
         
 

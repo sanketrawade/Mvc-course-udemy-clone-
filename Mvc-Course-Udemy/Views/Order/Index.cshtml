@@ -18,7 +18,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Email)
         </th>
-      
         <th>
             @Html.DisplayNameFor(model => model.status)
         </th>
@@ -41,7 +40,7 @@
             @Html.DisplayFor(modelItem => item.status)
         </td>
         <td>
-            @Html.ActionLink("Manage Order", "UpdateOrder", new { id=item.ID }) |
+            @Html.ActionLink("Manage Order", "UpdateOrder", new { id=item.ID }, new { @class="btn btn-primary" } ) 
           
         </td>
     </tr>

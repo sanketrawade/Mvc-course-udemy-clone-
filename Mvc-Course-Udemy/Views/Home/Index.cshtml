@@ -4,110 +4,75 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Products</h2>
 
 <style>
-    ul li {display:inline;}
+    ul li {
+        display: inline;
+    }
 </style>
 
-<div class="col-sm-2">
-    <ul class="list-group-horizontal">
-        <li>
-    @Html.ActionLink("All-Products", "Index", null ,new { @class = Request["Viewcategory"]==null? "list-group-item active" : "list-group-item" })
-    </li>
-    @foreach (var item in Model.category)
-    {
-        <li class="list-group-item">
-        @Ajax.ActionLink(item.Category,  "Filter", "Home", new { Viewcategory = item.Category }, new AjaxOptions() {  HttpMethod="GET" ,OnSuccess="dataReceive" } , new { @class = "Item-list" })
-    </li>
-    }
-</ul>
-    </div>
+<nav class="nav navbar-expand-md navbar-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            @Html.ActionLink("All-Products", "Index", null, new { @class = Request["Viewcategory"] == null })
+            </div>
+            @foreach (var item in Model.category)
+            {
+                <div class="navbar-nav">
+                    @Ajax.ActionLink(item.Category, "Filter", "Home", new { Viewcategory = item.Category }, new AjaxOptions() { HttpMethod = "GET", OnSuccess = "dataReceive" })
+                    </div>
+                    }
 
-
-<div class="col-sm-10">
-<div class="row">
-    <div class="col-sm-3">
-        <strong><h4></h4></strong>
-    </div>
-     
-    <div class="col-sm-3">
-        <strong><h4>Product Name</h4></strong>
-    </div>
-
-    <div class="col-sm-3">
-        <strong><h4>Product Price</h4></strong>
-    </div>
-
-    <div class="col-sm-3">
-
-    </div>
-</div>
-    
-<hr />
-<br /><br /><br />
+                </div>
+    </nav>
+            <hr />
+            <br /><br /><br />
+            
+              @* @Html.Partial("listproduct", Model.product);*@
+                
+<div class="container">
     <div id="ListProduct">
         <div class="row">
-          
-
-                @foreach (var item in Model.product)
-                {
-                    <div class="col-md-3">
-                        <img class="img-fluid" style="height:200px;" src="~/Content/ProductImage/@item.Image" />
-
-                    </div>
-
-                    <div class="col-md-3">
-                        <strong>@Html.ActionLink(item.Name, "Details", new { id = item.ID })</strong>
-
-                    </div>
-
-                    <div class="col-md-3">
-                        <h5>@Html.DisplayFor(modelItem => item.price)</h5>
-
-                    </div>
-
-                    <div class="col-md-3">
-                        <a href="@Url.Action("addtoBasket", "Basket", new {id=item.ID})" class="btn btn-outline-primary" >Add to Basket</a>
-                       
-                    </div>
-                    <br />
-                }
-             
-            
-        </div>
-    </div>
-
-    <div id="Filter">
-        <table class="table">
-            @*<thead>
-                <th>Product Image</th><th>Product-Name</th><th>Product-price</th>
-            </thead>*@
-            <tbody>
-              
-            </tbody>
-        </table>
-        </div>
-    </div>
-                <script type="text/javascript">
-                    
-                    
-
-                    function dataReceive(data) {
-                        data = JSON.parse(data);
-                        $("Filter").css("display","normal")
-                        console.log(data);
-                        $("#ListProduct").hide();
-                        $("table tbody").empty();
-                        //$("#Filter").replaceAll("<p></p>")
-                        for (var i in data.product) {
-                            var row = "<tr><td> <img class='img-fluid' style='height:200px'; src='/Content/ProductImage/" + data.product[i].Image + "'/></td><td> " + data.product[i].Name + "</td><td> " + data.product[i].price + " </td></tr>";
-                            $(".table tbody").append(row);
-
-                            // $("#imgid").attr("src", "/Content/ProductImage/" + data.product[i].Image);
-
-                            //$("#Filter product-name").append('<p>' + data.product[i].Name + '</p>');
-                            //$("#Filter product-price").append('<p>' + data.product[i].price + '</p>');
-                        }
+            <div class="col-sm-12">
+                <div class="col-sm-auto">
+                    @foreach (var item in Model.product)
+                    {
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="~/Content/ProductImage/@item.Image" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">@Html.ActionLink(item.Name, "Details", new { id = item.ID })</h5>
+                                <p class="card-text">@Html.DisplayFor(modelItem => item.price)</p>
+                                <a href="@Url.Action("addtoBasket", "Basket", new {id=item.ID})" class="btn btn-outline-primary">Add to Basket</a>
+                            </div>
+                        </div> 
+                     <br />
                     }
-                </script>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    
+
+
+            <div id="Filter">
+                <table class="table">
+                    <tbody></tbody>
+                </table>
+            </div>
+            <script type="text/javascript">
+
+                function dataReceive(data) {
+                    data = JSON.parse(data);
+                    $("Filter").css("display", "normal")
+                    console.log(data);
+                    $("#ListProduct").hide();
+                    $("table tbody").empty();
+                    //$("#Filter").replaceAll("<p></p>")
+                    for (var i in data.product) {
+                        var row = "<tr><td> <img class='img-fluid' style='height:200px'; src='/Content/ProductImage/" + data.product[i].Image + "'/></td><td> " + data.product[i].Name + "</td><td> " + data.product[i].price + " </td></tr>";
+                        $(".table tbody").append(row);
+                    }
+                }
+
+            </script>

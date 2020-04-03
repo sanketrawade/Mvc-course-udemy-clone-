@@ -87,18 +87,7 @@ namespace Mvc_Course_Udemy.Controllers
         public ActionResult checkout(Order order)
         {
             var basketItems = basketservice.GetBasketItem(this.HttpContext);
-
-            order.status = "Order Placed";
-            //foreach(var item in basketItems)
-            //{
-            //    order.orderItems.Add(new OrderItem()
-            //    {
-            //        itemName = item.itemName,
-            //        itemPrice = item.itemPrice,
-            //        itemImage = item.itemImage,
-            //        itemQuentity = item.itemQuentity
-            //    });
-            //}
+            order.status = "";
             orderservice = new OrderService();
             orderservice.generateOrder(order, basketItems);
             basketservice.removeAllBasketItems(this.HttpContext);

@@ -8,6 +8,6 @@ namespace MyShop.Core.Model
 {
     public class OrderStatus:BaseEntity
     {
-     //   public List<>
+        public string status { get; set; }
     }
 }

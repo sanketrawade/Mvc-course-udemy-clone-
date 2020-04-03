@@ -22,5 +22,6 @@ namespace MyShop.DataAcess.InSQL
         public DbSet<Customer> customers { get; set; }
         public DbSet<Order> orders { get; set; }
         public DbSet<OrderItem> orderItems { get; set; }
+        public DbSet<OrderStatus> orderStatus { get; set; }
     }
 }

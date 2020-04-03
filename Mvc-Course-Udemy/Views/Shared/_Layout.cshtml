@@ -23,10 +23,18 @@
             <div class="navbar-nav">
                 @Html.ActionLink("Home","Index","Home",null,new { @class= "nav-item nav-link" }) <span class="sr-only">(current)</span>
                 @Html.ActionLink("Admin", "Index", "Admin", null, new { @class="nav-item nav-link"})
-                @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-item nav-link" })
                 @Html.ActionLink("Registration", "Register", "Account", null, new { @class = "nav-item nav-link" })
                 @Html.ActionLink("MyCart", "Index", "Basket", null, new { @class = "nav-item nav-link" })
-           
+                @Html.ActionLink("MyOrders", "showOrder", "Order", null, new { @class = "nav-item nav-link" })
+                @if (Request.IsAuthenticated)
+                {
+                   <a class="nav-item nav-link">@User.Identity.Name</a>
+                @Html.ActionLink("Logout", "LogOff", "Account", null, new { @class = "nav-item nav-link" })
+                }
+                else
+                {
+                    @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-item nav-link" })
+                }
             </div>
         </div>
     </nav>

@@ -90,6 +90,18 @@
     <Compile Include="Migrations\201912170234585_orders-second.designer.cs">
       <DependentUpon>201912170234585_orders-second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912241540265_statuslist.cs" />
+    <Compile Include="Migrations\201912241540265_statuslist.designer.cs">
+      <DependentUpon>201912241540265_statuslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912241610021_status.cs" />
+    <Compile Include="Migrations\201912241610021_status.designer.cs">
+      <DependentUpon>201912241610021_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912241655321_statusAgain.cs" />
+    <Compile Include="Migrations\201912241655321_statusAgain.designer.cs">
+      <DependentUpon>201912241655321_statusAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -127,6 +139,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912170234585_orders-second.resx">
       <DependentUpon>201912170234585_orders-second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912241540265_statuslist.resx">
+      <DependentUpon>201912241540265_statuslist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912241610021_status.resx">
+      <DependentUpon>201912241610021_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912241655321_statusAgain.resx">
+      <DependentUpon>201912241655321_statusAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -160,22 +160,23 @@ namespace Mvc_Course_Udemy.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                  
+                        GenericDataAccess<Customer> customers = new GenericDataAccess<Customer>(new DataContext());
+                        Customer customer = new Customer()
+                        {
+                            city = model.city,
+                            state = model.state,
+                            street = model.street,
+                            firstName = model.firstName,
+                            lastName = model.lastName,
+                            zipCode = model.zipCode,
+                            Email = model.Email,
+                            userID = user.Id,
+                        };
 
-                    GenericDataAccess<Customer> customers = new GenericDataAccess<Customer>(new DataContext());
-                    Customer customer = new Customer()
-                    {
-                        city = model.city,
-                        state = model.state,
-                        street = model.street,
-                        firstName = model.firstName,
-                        lastName = model.lastName,
-                        zipCode = model.zipCode,
-                        Email = model.Email,
-                        userID = user.Id
-                    };
-
-                    customers.Insert(customer);
-                    customers.Commit();
+                        customers.Insert(customer);
+                        customers.Commit();
+                    
 
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
@@ -409,8 +410,8 @@ namespace Mvc_Course_Udemy.Controllers
 
         //
         // POST: /Account/LogOff
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+     
+
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
